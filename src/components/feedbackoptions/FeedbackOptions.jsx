@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { ButtonOption, OptionList } from "./FeedbackOptions.style";
+import PropTypes from "prop-types";
 
 export default class FeedbackOptions extends Component {
   render() {
@@ -18,3 +19,8 @@ export default class FeedbackOptions extends Component {
     );
   }
 }
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.array,
+  onLeaveFeedback: PropTypes.object,
+};
